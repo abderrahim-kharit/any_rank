@@ -1,0 +1,132 @@
+/* Global Rules */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Variables */
+:root{
+    --white-color:white;
+    --points-color:#59d3f5;
+    --dark-bleu:#081024;
+    --light-white:#ced3d7;
+}
+body{
+    background-color:var(--dark-bleu) ;
+    /* font-family: Lora; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* Start Component */
+.flex-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.flex-strech{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.container{
+    margin: 0 auto;
+    padding: 0 10px;
+}
+/* End Component */
+/* Small */
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/* Start Header */
+header{
+    padding: 20px 5px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+header .top-header .logo {
+    font-weight: bold;
+}
+header .top-header .logo .rank{
+    color: darkorange;
+}
+header .top-header .welcome{
+    color: var(--light-white);
+}
+header p sup{
+    color: var(--points-color);
+    font-size: 18px;
+    font-weight: bold;
+}
+/* End Header */
+/* Start Main Section */
+section{
+    background-color: #100e0e;
+    background-size:cover ;
+    background-position: center;
+    flex: 1;
+}
+section .container {
+    padding: 20px 10px;
+}
+section .states{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 20px;
+}
+section .card .cover {
+    width: 100%;
+    height: 150px;
+}
+section .points{
+    color: var(--points-color);
+    margin-left: 10px;
+}
+section .text{
+    font-size: 18px;
+    background-image: linear-gradient(to bottom, #000000, #0b1a20);
+    padding: 5px 5px 10px 10px;
+    width: 100%;
+    height: 100%;
+}
+section .serie-name span {
+    color: var(--light-white);
+}
+section .points span{
+    font-weight: bold;
+    font-size: 28px;
+}
+/* End Main Section */
+/* Start Footer */
+footer{
+    font-size: 18px;
+    padding: 20px 0;
+    font-weight: bold;
+    text-align: center;
+}
+footer .logo span {
+    color: darkorange;
+}
+/* End Footer */
